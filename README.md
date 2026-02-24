@@ -1,74 +1,95 @@
-# Welcome to your Lovable project
+# Seb Studio
 
-## Project info
+Modern agency portfolio website built with React, TypeScript, Tailwind CSS, and shadcn/ui components.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Overview
 
-## How can I edit this code?
+Seb Studio is a single-page marketing site designed to showcase:
+- Services
+- Portfolio projects
+- Client testimonials
+- Business stats
+- Contact form with client-side validation
 
-There are several ways of editing your application.
+The UI includes motion animations, responsive layouts, and a reusable component architecture.
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- React 18
+- TypeScript
+- Vite 5
+- Tailwind CSS
+- shadcn/ui + Radix UI
+- Framer Motion
+- React Router
+- TanStack Query
+- Vitest + Testing Library
 
-Changes made via Lovable will be committed automatically to this repo.
+## Prerequisites
 
-**Use your preferred IDE**
+- Node.js 18+ (recommended: latest LTS)
+- npm 9+
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+git clone <your-repository-url>
+cd Seb-Studio
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+App runs on `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` starts the Vite dev server
+- `npm run build` creates a production build in `dist/`
+- `npm run build:dev` creates a development-mode build
+- `npm run preview` previews the production build locally
+- `npm run lint` runs ESLint checks
+- `npm run test` runs tests once with Vitest
+- `npm run test:watch` runs Vitest in watch mode
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```text
+src/
+  components/      Reusable page and UI components
+  data/            Site content and section data
+  hooks/           Custom React hooks
+  lib/             Shared utility functions
+  pages/           Route-level pages
+  test/            Test setup and specs
+```
 
-This project is built with:
+## Customization
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Update branding and content in `src/data/siteData.ts`
+- Adjust theme tokens and global styles in `src/index.css`
+- Tune Tailwind config in `tailwind.config.ts`
+- Add or modify sections in `src/components/`
 
-## How can I deploy this project?
+## Quality and Testing
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Run these before opening a PR:
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+npm run lint
+npm run test
+npm run build
+```
 
-Yes, you can!
+## Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Build the project:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
-# Seb-Studio
+```bash
+npm run build
+```
+
+Deploy the generated `dist/` directory to any static hosting platform, such as Vercel, Netlify, Cloudflare Pages, or GitHub Pages.
+
+## License
+
+This project is private and currently has no public license file.
